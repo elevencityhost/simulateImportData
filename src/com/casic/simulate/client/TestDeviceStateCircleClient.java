@@ -10,7 +10,7 @@ import com.casicloud.mail.SendMail;
 public class TestDeviceStateCircleClient {
 	
 	final static String url = "http://106.74.152.104:80/api/1.1/iot/device_state_acquire";
-	final static String accesskey = "kHaWwOZQvr8pm8LnlHtszg==";
+	final static String accesskey = "";
 	final static DeviceStateClient client = new DeviceStateClient(url, accesskey);
 	
 	public static void main(String[] args) throws Exception{
@@ -33,7 +33,7 @@ public class TestDeviceStateCircleClient {
 			int yxcount = 0;
 			int gzcount = 0;
 			currentTime = new Date().getTime();
-			dsReq.setIot("10000050660087");
+			dsReq.setIot("");
 			//device01--运行--device02
 			for(;yxcount<3;yxcount++){
 				dsReq.addData(yxdeviceArr[yxcount], "1000", currentTime);
