@@ -17,7 +17,7 @@ public class TestIotAcquireCircleClient {
 	
 	final static String url = "http://106.74.152.104:80/api/1.1/iot/data_acquire";
 	//final static String url2 = "http://iotapi.casicloud.com/api/1.1/iot/device_state_acquire";
-	final static String accesskey = "kHaWwOZQvr8pm8LnlHtszg==";			//JCt3+Jp/cUKkDQBuUFJ7oA==
+	final static String accesskey = "";			
 	final static IotAcquireClient client = new IotAcquireClient(url, accesskey);
 	//final static DeviceStateClient client2 = new DeviceStateClient(url2, accesskey);
 	//static int  cnt1=0;
@@ -41,7 +41,7 @@ public class TestIotAcquireCircleClient {
 				string2 = (Float) list.get(g).get("nac_direct");
 				string3 = (Float) list.get(g).get("re_power");
 				IotAcquireRequest req = new IotAcquireRequest();
-				req.setIot("10000050660087");
+				req.setIot("");
 				
 				//设备ID（需修改内容，与系统中设备ID对应）
 				req.setEquipment("10000049224865");
